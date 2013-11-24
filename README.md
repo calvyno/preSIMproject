@@ -1,3 +1,17 @@
+Pre-SIMproject
+==============
+
+Introduction
+------------
+Prior to creating an actual SIM project, this is my pre-SIM project.  This is basically my learning space where I am testing code from what I've learned from tutorials and books.
+
+Any change I commit to this repository will describe what I added and changed, as well as any other relevant information.
+
+This is based off the Zend Skeleton Application.  Therefore I am leaving the original ZendSkeletonApplication readme below in case it is needed for reference.
+
+
+
+
 ZendSkeletonApplication
 =======================
 
