@@ -10,7 +10,7 @@
 namespace Debug;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-use Zend\Mvc\ModuleRouteListener;
+//use Zend\Mvc\ModuleRouteListener;
 //use Zend\Module\Manager;
 use Zend\ModuleManager\ModuleManager;
 use Zend\EventManager\Event;
@@ -20,6 +20,10 @@ class Module implements AutoloaderProviderInterface
 {
     public function init(ModuleManager $moduleManager)
     {
+        $date = new \DateTime();
+        $date = $date->format('Y-m-d H:i:s');
+        
+        error_log('====== BEGIN DEBUG LOGGING ['.$date.'] ======');
         $eventManager = $moduleManager->getEventManager();
         $eventManager->attach('loadModules.post',array($this,'loadedModulesInfo'));
         //array($this, 'loadedModulesInfo') is a PHP callback to the loadedModulesInfo function in this class.
